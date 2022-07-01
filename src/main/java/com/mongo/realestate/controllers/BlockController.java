@@ -36,5 +36,9 @@ List<Block> fetchAll(){
 
    }
 
+    @GetMapping("/all-all")
+    List<Block> fetchAllA(){
+        return blockService.findAll();
 
+    }
 }
