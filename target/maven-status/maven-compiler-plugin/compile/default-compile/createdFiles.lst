@@ -1,5 +1,5 @@
-com/mongo/realestate/models/Block.class
 com/mongo/realestate/controllers/BlockController.class
-com/mongo/realestate/ProductApplication.class
 com/mongo/realestate/services/BlockService.class
 com/mongo/realestate/repositories/BlockRepository.class
+com/mongo/realestate/models/Block.class
+com/mongo/realestate/ProductApplication.class

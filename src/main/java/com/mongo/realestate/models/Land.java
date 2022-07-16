@@ -3,10 +3,10 @@ package com.mongo.realestate.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document("Land")
+//@Document("Land")
 public class Land {
 
-    @Id
+  //  @Id
     private String id;
     private String landAddress;
     private String landArea;

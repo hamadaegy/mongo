@@ -6,16 +6,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Document("BLOCK")
+//@Document("BLOCK")
 public class Block {
 
-    @Id
+  //  @Id
 
     private String id;
     private String name;
     private String area;
 
-    @DBRef
+    //@DBRef
     List<Land> lands;
 
     public Block() {
