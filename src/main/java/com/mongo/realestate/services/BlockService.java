@@ -14,8 +14,9 @@ public class BlockService {
     BlockRepository blockRepository;
 
 
-    public void save(Block b) {
-        blockRepository.save(b);
+    public Block save(Block b) {
+       return blockRepository.save(b);
+
     }
 
     public List<Block> findAll() {

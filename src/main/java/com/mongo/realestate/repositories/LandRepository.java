@@ -1,9 +1,10 @@
 package com.mongo.realestate.repositories;
 
-import com.mongo.realestate.models.Block;
+import com.mongo.realestate.models.Land;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 //@Repository
-public interface BlockRepository extends MongoRepository<Block, String> {
+public interface LandRepository extends MongoRepository<Land, String> {
+
 }
