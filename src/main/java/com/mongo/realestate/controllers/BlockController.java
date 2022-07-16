@@ -57,5 +57,8 @@ public class BlockController {
     String fetchString() {
         return "Hello";
     }
-
+    @GetMapping("/h2")
+    String fetchString2() {
+        return "Hello2";
+    }
 }
