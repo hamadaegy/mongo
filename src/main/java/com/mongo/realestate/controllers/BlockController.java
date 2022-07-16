@@ -53,5 +53,9 @@ public class BlockController {
         return new ArrayList<>();
     }
 
+    @GetMapping("/h")
+    String fetchString() {
+        return "Hello";
+    }
 
 }
