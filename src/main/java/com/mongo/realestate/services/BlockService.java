@@ -10,16 +10,16 @@ import java.util.List;
 @Service
 public class BlockService {
 
-    @Autowired
-    BlockRepository blockRepository;
+    //@Autowired
+    //BlockRepository blockRepository;
 
 
     public Block save(Block b) {
-       return blockRepository.save(b);
-
+//       return blockRepository.save(b);
+return null;
     }
 
     public List<Block> findAll() {
-        return blockRepository.findAll();
+        return null;
     }
 }
