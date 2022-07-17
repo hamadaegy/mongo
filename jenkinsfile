@@ -18,5 +18,4 @@ sh 'docker run real-estate/demo -p 8081:8081'
 }
 }
 
-
 }
