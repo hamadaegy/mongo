@@ -1,0 +1,23 @@
+Pipeline{
+agent{label:'docker-example'}
+options {
+  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')
+}
+
+stages{
+stage('build maven'){
+sh 'mvn clean install'
+}
+stage('build image'){
+echo 'docker build -t real-estate/demo .'
+sh 'docker build -t real-estate/demo .'
+}
+stage('Run image'){
+echo 'docker run real-estate/demo -p 8081:8081'
+sh 'docker run real-estate/demo -p 8081:8081'
+}
+
+}
+
+
+}
