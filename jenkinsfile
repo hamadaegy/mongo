@@ -11,6 +11,7 @@ pipeline{
 
           stage('Build image') {
                         steps {
+                              sh 'sudo usermod -a -G docker jenkins'
                               echo 'docker build -t real-estate/demo .'
                               sh 'docker build -t real-estate/demo .'
                         }
