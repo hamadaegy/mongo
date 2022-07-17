@@ -1,23 +1,27 @@
 pipeline{
-   agent any
 
+   agent any
    stages {
-      stage('Build maven') {
-         steps {
-            sh 'mvn clean install'
+
+         stage('Build maven') {
+              steps {
+                    sh 'mvn clean install'
+              }
          }
-      }
-      stage('Build image') {
-         steps {
-            echo 'docker build -t real-estate/demo .'
-            sh 'docker build -t real-estate/demo .'
-         }
-      }
-      stage('Run image') {
-         steps {
-            echo 'docker run real-estate/demo -p 8081:8081'
-            sh 'docker run real-estate/demo -p 8081:8081'
-         }
-      }
+
+          stage('Build image') {
+                        steps {
+                              echo 'docker build -t real-estate/demo .'
+                              sh 'docker build -t real-estate/demo .'
+                        }
+          }
+
+          stage('Run image') {
+                        steps {
+                             echo 'docker run real-estate/demo -p 8081:8081'
+                             sh 'docker run real-estate/demo -p 8081:8081'
+                        }
+          }
+
    }
 }
